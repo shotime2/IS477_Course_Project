@@ -80,11 +80,13 @@ Timeline:
 
 
 Constraints: 
+
 Some constraints we might face throughout this project relate to both the data set alignment and the resources within our team. As it refers to our data, the two sets could struggle with timing. For example, the air pollution data might be updated as regularly as day to day, whereas the electric vehicle chargers might be more static and will not change as regularly. Additionally, the air quality will fluctuate a lot depending on factors with the environment and weather, while the chargers will likely not be removed once they are installed. Another main concern is how Covid-19 could affect our analysis since we are looking at a ten year period from 2014-2024. We need to consider in our report that our results could be skewed around 2020 to 2022 since the lockdown would’ve improved air quality. Our constraints with our team will consist of finding times to meet during the week around our busy schedules. We will need to utilize our time efficiently and our individual skills to ensure we stay on our timeline.  
 Other data-related constraints include the access restrictions that may be applied on these datasets. Using API keys could limit us to certain amounts of usage to collect data. Even after collecting it, the entire dataset could be so large depending on the update cycles. If there is data on the air quality from every day for ten to twenty years, there will be a lot of samples. This could lead to slow running times if most of the data qualifies for our research. Looking forward to the rest of the semester, we will be constrained by the amount of knowledge we have and when we learn each additional skill. Some examples we might want to incorporate are descriptive, predictive, and prescriptive analyses. These will be solved as we progress through the course and continue to develop these skills. 
 
 
 Gaps: 
+
 Some gaps that exist in our research before we begin are: 
 What size of areas will we compare? (state, zip code, city) 
 Should we compare economic data, or other demographic information on the area that we apply this data to? 
