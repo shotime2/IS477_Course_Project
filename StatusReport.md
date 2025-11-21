@@ -30,13 +30,13 @@ Status: COMPLETE
 Status: IN PROGRESS
 12/2: Analyze our findings based on evidence (Carter)
 Status: IN PROGRESS
-12/5: Finalize Interim Status Report(Carter)
+12/4: Finalize Interim Status Report(Carter)
 Status: IN PROGRESS
-12/8: Answer our initial questions and draft our final project (Shobhit & Carter)
+12/5: Answer our initial questions and draft our final project (Shobhit & Carter)
 Status: NOT DONE YET
-12/9 : Finalize our project and revise for clarity and coherence (Shobhit & Carter)
+12/6 : Finalize our project and revise for clarity and coherence (Shobhit & Carter)
 Status: NOT DONE YET
-12/10: Submit Project (Shobhit & Carter)
+12/7: Submit Project (Shobhit & Carter)
 Status: NOT DONE YET
 
 Based on our current progress, we updated our previous Project plan timeline to make sure the dates aligned with our current work. We changed the order for some of our tasks because some tasks took longer than expected.
@@ -52,4 +52,5 @@ For this milestone, I contributed by handling the preprocessing and integration 
 
 Carter’s Contribution Summary:
 Up to this point in the project I built off of the merged datasets to begin our visualizations. In Visual Studio Code I made a correlation matrix, and wrote the code for the three scatterplots. While we have the code, we need to be able to save the second two scatterplots going forward.
+
 
