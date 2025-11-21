@@ -1,3 +1,4 @@
+
 Looking back on our timeline and plan for our group project in IS 477, we have made a lot of progress towards our final goal. Ultimately, we still want to use the same two datasets about Electric Vehicles and Air quality trends as our main focus is finding a relationship between the density of electric vehicle charging stations and improvements in air quality.
 
 Updates: 
@@ -45,5 +46,10 @@ Next Steps:
 Overall, our original plan is holding together quite well. The datasets have not caused any serious problems that redirect our goals. We will continue to analyze the two datasets and establish if there is a correlation between charging stations and air quality, or if there are confounding variables. We will need to establish our correlations and visuals to defend those correlations, likely using scatterplots and correlation matrices. Visualization will help deliver evidence to further analyze why our outcome is what it will be. These analyses will go beyond the surface, and will describe the specific actions taken to find the evidence that supports it. This will all most likely go under the analysis folder of the project.
 Our conclusions from analysis will then lead us to answering our initial questions stated earlier. These answers will indicate the finalization of our project. At this point all that will be left to do is to ensure that all of our findings and conclusions are clear, coherent, transparent, and most importantly replicable. By submitting our projects to Github, they will be publicly available for someone to replicate. This will give people the opportunity to take our work and dive deeper into more specific areas, or answer questions that might arise down the road.
 
+
+Shobhit’s Contribution Summary:
+For this milestone, I contributed by handling the preprocessing and integration of our data. I extracted our raw data from downloading EV csv and fetching from EQS API. I created scripts to clean each of the raw datasets by handling missing values, standardizing data, and grouping by state and year. After cleaning both datasets, I merged them both using an inner join.
+
 Carter’s Contribution Summary:
 Up to this point in the project I built off of the merged datasets to begin our visualizations. In Visual Studio Code I made a correlation matrix, and wrote the code for the three scatterplots. While we have the code, we need to be able to save the second two scatterplots going forward.
+
