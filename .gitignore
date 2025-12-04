@@ -1,7 +1,8 @@
-raw/
-*.csv
-*.json
-*.zip
+!analysis/*.csv
+
+raw/*.csv
+raw/*.json
+raw/*.zip
 
 .DS_Store
 __pycache__/
