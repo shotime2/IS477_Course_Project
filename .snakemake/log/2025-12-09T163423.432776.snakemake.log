@@ -1,0 +1,37 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job         count
+--------  -------
+analysis        1
+run_all         1
+total           2
+
+Select jobs to execute...
+
+[Tue Dec  9 16:34:23 2025]
+rule analysis:
+    input: merged/merged_ev_and_air.csv
+    output: analysis/correlation_table.csv, analysis/PM25_scatterplot.png, analysis/Ozone_scatterplot.png
+    jobid: 4
+    reason: Missing output files: analysis/correlation_table.csv
+    resources: tmpdir=/var/folders/8n/_1qz2by16x1fd6xbl2_6df940000gn/T
+
+[Tue Dec  9 16:35:46 2025]
+Finished job 4.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Tue Dec  9 16:35:46 2025]
+localrule run_all:
+    input: merged/merged_ev_and_air.csv, analysis/correlation_table.csv, analysis/PM25_scatterplot.png, analysis/Ozone_scatterplot.png
+    jobid: 0
+    reason: Input files updated by another job: analysis/Ozone_scatterplot.png, analysis/correlation_table.csv, analysis/PM25_scatterplot.png
+    resources: tmpdir=/var/folders/8n/_1qz2by16x1fd6xbl2_6df940000gn/T
+
+[Tue Dec  9 16:35:46 2025]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: .snakemake/log/2025-12-09T163423.432776.snakemake.log

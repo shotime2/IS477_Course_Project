@@ -1,0 +1,49 @@
+Assuming unrestricted shared filesystem usage.
+host: Shobhits-MacBook-Air-2.local
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job           count
+----------  -------
+analysis          1
+merge_data        1
+run_all           1
+total             3
+
+Select jobs to execute...
+Execute 1 jobs...
+[Tue Dec  9 16:20:37 2025]
+localrule merge_data:
+    input: clean/ev_state_year_clean.csv, clean/air_state_year_clean.csv
+    output: merged/merged_ev_and_air.csv
+    jobid: 1
+    reason: Updated input files: clean/air_state_year_clean.csv
+    resources: tmpdir=/var/folders/8n/_1qz2by16x1fd6xbl2_6df940000gn/T
+RuleException:
+CalledProcessError in file "/Users/shovraman/IS477_Course_Project/Snakefile", line 31:
+Command 'set -euo pipefail;  python scripts/merge.py' returned non-zero exit status 1.
+[Tue Dec  9 16:20:37 2025]
+Error in rule merge_data:
+    message: None
+    jobid: 1
+    input: clean/ev_state_year_clean.csv, clean/air_state_year_clean.csv
+    output: merged/merged_ev_and_air.csv
+    shell:
+        python scripts/merge.py
+        (command exited with non-zero exit code)
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Tue Dec  9 16:20:37 2025]
+Error in rule merge_data:
+    message: None
+    jobid: 1
+    input: clean/ev_state_year_clean.csv, clean/air_state_year_clean.csv
+    output: merged/merged_ev_and_air.csv
+    shell:
+        python scripts/merge.py
+        (command exited with non-zero exit code)
+Complete log(s): /Users/shovraman/IS477_Course_Project/.snakemake/log/2025-12-09T162037.365115.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

@@ -1,0 +1,45 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job           count
+----------  -------
+analysis          1
+merge_data        1
+run_all           1
+total             3
+
+Select jobs to execute...
+
+[Tue Dec  9 16:28:04 2025]
+rule merge_data:
+    input: clean/ev_state_year_clean.csv, clean/air_state_year_clean.csv
+    output: merged/merged_ev_and_air.csv
+    jobid: 1
+    reason: Missing output files: merged/merged_ev_and_air.csv; Code has changed since last execution
+    resources: tmpdir=/var/folders/8n/_1qz2by16x1fd6xbl2_6df940000gn/T
+
+[Tue Dec  9 16:28:11 2025]
+Finished job 1.
+1 of 3 steps (33%) done
+Select jobs to execute...
+
+[Tue Dec  9 16:28:11 2025]
+rule analysis:
+    input: merged/merged_ev_and_air.csv
+    output: analysis/correlation_table.csv, analysis/PM25_scatter.png, analysis/Ozone_scatter.png
+    jobid: 4
+    reason: Input files updated by another job: merged/merged_ev_and_air.csv
+    resources: tmpdir=/var/folders/8n/_1qz2by16x1fd6xbl2_6df940000gn/T
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule analysis in file /Users/shovraman/IS477_Course_Project/Snakefile, line 33:
+Job 4  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+analysis/PM25_scatter.png
+analysis/Ozone_scatter.png
+Removing output files of failed job analysis since they might be corrupted:
+analysis/correlation_table.csv
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2025-12-09T162803.895277.snakemake.log
