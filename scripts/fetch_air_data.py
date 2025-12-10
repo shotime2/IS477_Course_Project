@@ -2,8 +2,8 @@ import requests
 import pandas as pd
 import time
 
-API_KEY = "ecrufox44"
-EMAIL = "shobhitvp@gmail.com"
+API_KEY = "YOUR_KEY"
+EMAIL = "YOUR_EMAIL"
 
 POLLUTANTS = {
     "PM2.5": "88101",
