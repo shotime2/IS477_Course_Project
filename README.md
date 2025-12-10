@@ -11,6 +11,7 @@ Shobhit Venkataraman
 Carter Reid
 
 Summary:
+
 In today’s word, Electric vehicle companies like Tesla and Rivian are becoming more popular for daily commuters and many other car companies are shifting their focus to developing their own EVs. With the rise in EVs in the United States, it would beg the question whether the environment’s air quality would improve. This is because we assume that switching from gas-powered cars to EVs would reduce emissions, and thereby improving overall air quality. Gas-powered vehicles contribute heavily to pollutants like Carbon monoxide, ozone precursors, nitrogen oxides, and particulate matter while EVs produce no tailpipe emissions. However, air quality can be influenced by many different factors including natural disasters, industrial emissions, weather, agriculture, etc. Also EV density varies across states due to population and economy so this raises the question to what extent do these two correlate.
 
 Our motivation for doing this project comes from this assumption and we wanted to find out if there is a relationship between the density of electric vehicle charging stations and the improvement of air quality. We believe that our findings could help inform city planners and policymakers about the benefits or harms of investing in more EV infrastructure in areas struggling with air pollutants.  We will be looking at data over a time period from 2014-2023 and focus on the most toxic air pollutants like PM2.5, Ozone, and CO.
@@ -37,6 +38,7 @@ In our analysis, we computed the changes in pollutant averages and EV growth, bu
 
 
 Data Profile:
+
 The project focuses on two data sources to find a relationship between electric vehicle infrastructure growth and changes in the air quality across U.S. states. Our first dataset is EV Charging Station Dataset from PlaceKey and our second dataset was retrieved through requests to the U.S. Environmental Protection Agency’s Air Quality System API.
 
 
@@ -95,6 +97,7 @@ Following is the scatterplot made to highlight the effect the charging stations 
 Looking at all three of these visualizations, it is clear that there is no relationship between electric vehicle charging stations and the levels of certain gases in the air. None of these visualizations point to a linear relationship between the variables. In fact, they agree with each other that the charging stations do not impact the air quality at all. While this may change in the future, there is no substantial evidence to suggest that they do up to this point. 
 
 Future Work:
+
 Looking back over the course of this project, there were multiple lessons learned. Working with these datasets while learning concepts discussed in IS 477, we have developed a skillset that can be used in handling data going forward. Ideally, this project could be continued by anyone who is curious about these relationships and might want to take it further. The lessons focused on data quality and cleaning methods and choosing the right analysis methods for the given solution.  
 The first lesson learned is related to the difference between correlation and causation. From an original perspective it might seem obvious that the increase of electric vehicles would lead to less gases emitted. While it might make sense that more electric vehicle chargers were a result of more electric vehicles on the road. If there were more electric vehicles, then they likely would replace the gas using cars. If there are less gas cars on the road and used it is safe to assume that there would be less gases like Ozone and PM2.5. Unfortunately, after looking at the results of our analysis, the measurement of these gases has little to no relation to the chargers. It is obvious that because something makes semantic sense, it definitely does not mean that there is an actual connection between things.  
 The second lesson learned from this project is the importance of data quality. The higher quality the data you choose, the less work is needed to prepare it for analysis. Considering accuracy, a dataset in which the input data is entered consistently by the same person allows minimal syntactic errors. The clean consistent data within the datasets let the clean stay limited to dropping missing values. It was unnecessary to change specific words within the variables. Additionally, when the same person enters the data repeatedly, they will follow the same semantic rules every time. Assuming that the information they are inputting is true and relevant, the data will remain accurate throughout the entries. This makes projects like this much easier when dissecting datasets. 
