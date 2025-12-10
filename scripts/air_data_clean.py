@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("/Users/shovraman/IS477_Course_Project/raw/raw_air_quality.csv")
+df = pd.read_csv("raw/raw_air_quality.csv")
 
 df = df[["state_code", "parameter", "arithmetic_mean", "year"]]
 

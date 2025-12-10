@@ -1,6 +1,6 @@
 import pandas as pd
 
-raw_path = "/Users/shovraman/IS477_Course_Project/raw/ev_raw.csv"
+raw_path = "raw/ev_raw.csv"
 
 df = pd.read_csv(raw_path)
 
@@ -25,7 +25,7 @@ df = df[df["State"].isin(us_states)]
 
 ev_state_year = df.groupby(["State", "year"]).size().reset_index(name = "ev_station_count")
 
-ev_state_year.to_csv("/Users/shovraman/IS477_Course_Project/clean/ev_state_year_clean.csv",index=False)
+ev_state_year.to_csv("clean/ev_state_year_clean.csv",index=False)
 
 
 

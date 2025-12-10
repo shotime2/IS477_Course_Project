@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-df = pd.read_csv("/Users/shovraman/IS477_Course_Project/merged/merged_ev_and_air.csv")
+df = pd.read_csv("merged/merged_ev_and_air.csv")
 df_2014 = df[df["year"] == 2014]
 df_2023 = df[df["year"] == 2023]
 
@@ -18,7 +18,7 @@ merged["ozone_change"] = merged["Ozone_2023"] - merged["Ozone_2014"]
 correlation_table = merged[["ev_growth", "pm25_change", "ozone_change"]].corr()
 print(correlation_table)
 
-correlation_table.to_csv("/Users/shovraman/IS477_Course_Project/analysis/correlation_table.csv")
+correlation_table.to_csv("analysis/correlation_table.csv")
 
 plt.figure(figsize=(10, 7))
 plt.scatter(merged["ev_growth"], merged["pm25_change"])
@@ -31,7 +31,7 @@ plt.xlabel("EV Growth (2014–2023)")
 plt.ylabel("PM2.5 Change")
 plt.title("EV Growth vs PM2.5 Change")
 plt.grid(alpha=0.3)
-plt.savefig("/Users/shovraman/IS477_Course_Project/analysis/PM25_scatterplot.png")
+plt.savefig("analysis/PM25_scatterplot.png")
 plt.show()
 
 
@@ -47,7 +47,7 @@ plt.xlabel("EV Growth (2014–2023)")
 plt.ylabel("Ozone Change")
 plt.title("EV Growth vs Ozone Change")
 plt.grid(alpha=0.3)
-plt.savefig("/Users/shovraman/IS477_Course_Project/analysis/Ozone_scatterplot.png")
+plt.savefig("analysis/Ozone_scatterplot.png")
 plt.show()
 
 

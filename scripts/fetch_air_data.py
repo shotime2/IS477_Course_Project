@@ -13,7 +13,7 @@ POLLUTANTS = {
 
 years = range(2014, 2024)
 
-df_ev = pd.read_csv("/Users/shovraman/IS477_Course_Project/clean/ev_state_year_clean.csv")
+df_ev = pd.read_csv("clean/ev_state_year_clean.csv")
 states = sorted(df_ev["State"].unique())
 
 
@@ -57,7 +57,7 @@ for pollutant, param_code in POLLUTANTS.items():
             time.sleep(1)
 
 df_air = pd.DataFrame(data)
-df_air.to_csv("/Users/shovraman/IS477_Course_Project/raw/raw_air_quality.csv", index=False)
+df_air.to_csv("raw/raw_air_quality.csv", index=False)
 
 
         
